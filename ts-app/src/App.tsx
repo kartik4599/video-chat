@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     try {
       navigator.mediaDevices
-        .getUserMedia({ video: false, audio: true })
+        .getUserMedia({ video: true, audio: true })
         .then((stream) => {
           if (stream) {
             try {
